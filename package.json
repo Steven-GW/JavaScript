@@ -1,0 +1,22 @@
+{
+  "name": "print-app",
+  "version": "1.0.0",
+  "description": "A mini application to showcase the use of the print.js library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steven-GW/JavaScript.git"
+  },
+  "author": "Lee/Steven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steven-GW/JavaScript/issues"
+  },
+  "homepage": "https://github.com/Steven-GW/JavaScript#readme",
+  "dependencies": {
+    "print.js": "^1.0.18"
+  }
+}
