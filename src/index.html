@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print JS Demo</title>
+
+    <!-- Included print.js by downloading it so that you can use it without an internet connection-->
+    <script src="utils/print.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="utils/print.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="printHelper.js" type="application/javascript"></script>
+
+    <!-- If you want to import print.js via CDN you use the commented code below-->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/print-js/1.6.0/print.js"
+      integrity="sha512-/fgTphwXa3lqAhN+I8gG8AvuaTErm1YxpUjbdCvwfTMyv8UZnFyId7ft5736xQ6CyQN4Nzr21lBuWWA9RTCXCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/print-js/1.6.0/print.css"
+      integrity="sha512-tKGnmy6w6vpt8VyMNuWbQtk6D6vwU8VCxUi0kEMXmtgwW+6F70iONzukEUC3gvb+KTJTLzDKAGGWc1R7rmIgxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  </head>
+  <body>
+    <h3>Click on any of these images to print them</h3>
+    <section class="grid">
+      <div onclick="printHelper('images/npm-logo.png')" class="image-container">
+        <img src="images/npm-logo.png" alt="image-holder" />
+      </div>
+      <div onclick="printHelper('images/HTML5.png')" class="image-container">
+        <img src="images/HTML5.png" alt="image-holder" />
+      </div>
+      <div
+        onclick="printHelper('images/javascript-logo.png')"
+        class="image-container"
+      >
+        <img src="images/javascript-logo.png" alt="image-holder" />
+      </div>
+      <div onclick="printHelper('images/React.png')" class="image-container">
+        <img src="images/React.png" alt="image-holder" />
+      </div>
+      <div
+        onclick="printHelper('images/typescript_logo.png')"
+        class="image-container"
+      >
+        <img src="images/typescript_logo.png" alt="image-holder" />
+      </div>
+    </section>
+    <div class="button-container">
+      <button onclick="printAllImages()">Print All</button>
+    </div>
+  </body>
+</html>
